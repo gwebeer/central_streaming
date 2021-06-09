@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-filme {
+    width: 190px;
+    height: 350px;
+    float: left;
+    text-align: center;
+    margin: 50px;
+}
+.img-filme {
+    max-width: 120%;
+    width: 190px;
+    height: 270px;
+    object-fit: cover;
+}
+.title-filme {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(190, 228, 223);
+}
+.btn-filme {
+    color: rgb(190, 228, 223);
+    padding: 7px 10px 7px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(190, 228, 223);
+    border-radius: 20px;
+    margin: 10px;
+}
+.btn-filme:hover {
+    background-color: rgba(36,77,77,1);
+    color: rgb(190, 228, 223);
+    transition: color, background-color .3s;
+    border: 1px solid rgba(36,77,77,1);
+    cursor: pointer;
+}
