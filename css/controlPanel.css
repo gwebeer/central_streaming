@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.admins {
+    margin-left: 150px;
+    margin-top: 40px;
+    font-family: 'Fredoka One', cursive;
+}
+.novosTitulos {
+    margin-left: 150px;
+    margin-top: 40px;
+    font-family: 'Fredoka One', cursive;
+}
+.subtitle {
+    color: rgb(206, 203, 203);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+#email {
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+}
+.btAdmin {
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    background-color: teal;
+    color: rgb(206, 203, 203);
+    border: 1px solid teal;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 5px;
+}
+    .btAdmin:hover {
+    cursor: pointer;
+    color: teal;
+    border: 1px solid teal;
+    background-color: rgba(206, 203, 203, 0);
+    transition: background-color .3s;
+}
+label {
+    color: rgb(206, 203, 203);
+}
+.label-input {
+    background-color: thistle;
+}
+.inputAddTitulo {
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.btCadastrarFilme {
+    width: 130px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: teal;
+    color: rgb(206, 203, 203);
+    border: 1px solid teal;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+}
+.btCadastrarFilme:hover {
+    cursor: pointer;
+    color: teal;
+    border: 1px solid teal;
+    background-color: rgba(206, 203, 203, 0);
+    transition: background-color .3s;
+}
