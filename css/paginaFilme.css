@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+.nomeFilme {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(190, 228, 223);
+    letter-spacing: 3px;
+}
+.conteudo {
+    display: flex;
+    margin-left: 9%;
+}
+.infoFilme {
+    width: 450px;
+    height: 450px;
+    margin-top: 30px;
+    text-align: center;
+}
+.trailerFilme {
+    width: 700px;
+    height: 450px;
+    background-color: rgb(32, 32, 32);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+.labelInfo {
+    padding-top: 15px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(95, 196, 182);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.descInfo {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 30px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    color: rgb(190, 228, 223);
+}
+.infoFlex {
+    display: flex;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.infoMenor {
+    width: 100px;
+    height: 60px;
+    /* background-color: blue; */
+    margin: 10px;
+    text-align: center;
+}
+.labelMenor {
+    font-family: 'Fredoka One', cursive;
+    color: rgb(95, 196, 182);
+    letter-spacing: 1px;
+}
+.descMenor {
+    font-family: 'Baloo 2', cursive;
+    color: rgb(190, 228, 223);
+    margin: 10px;
+}
+.btFilme {
+    padding: 12px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #488879;
+    font-family: 'Baloo 2', cursive;
+    letter-spacing: 1px;
+    font-size: 12px;
+
+}
+.btFilme:hover{
+    background-color: rgb(2, 73, 58);
+    transition: background-color .3s;
+}
+#btAssistir {
+    width: 90px;
+}
+.videoTrailer {
+    width: 700px;
+    height: 450px;
+    border: none;
+}
