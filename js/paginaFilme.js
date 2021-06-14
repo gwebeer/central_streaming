@@ -1,20 +1,21 @@
 $(document).ready(function () {
-    sessionStorage.setItem('titulo', "Norbit");
-    var titulo = sessionStorage.getItem('titulo');
-    recuperaFilme(titulo);
+
+    var url = window.location.href
+    var idTitulo = url.substring(url.lastIndexOf('?id=') + 4);
+    recuperaFilme(idTitulo);
 });
 
 
 var registerError = false;
 const entry_point = "http://localhost/central_streaming/";
 
-function recuperaFilme(titulo) {
+function recuperaFilme(idTitulo) {
     $.ajax({
         type: "POST",
         dataType: "json",
         url: "../php/infosFilme.php",
         data: {
-            titulo: titulo,
+            titulo: idTitulo,
         },
         success: function(result){
             console.log(result);

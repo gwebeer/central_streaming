@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="page">
-    <div class="header">
+        <div class="header">
             <img src="../images/logo.png" class="imgHeader">
             <div class="menu">
                 <a href="../pages/catalogo.php" class="menuItem">INICIO</a>
@@ -36,7 +36,7 @@
                 <a href="../pages/favoritos.php" class="menuItem">MEUS FAVORITOS</a>
                 <a href="#" class="menuItem">ASSISTIDOS</a>
             </div>
-    
+
             <div class="menu user">
                 <a href="../pages/minhaConta.php" class="menuItem">MINHA CONTA</a>
                 <a href="#" class="menuItem">SAIR</a>

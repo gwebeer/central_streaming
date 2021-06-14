@@ -8,7 +8,7 @@
     $email = $_SESSION['usuario'];
 
     // Seta query para puxar titulo e imagem de todos filmes favoritos
-    $sql = "SELECT usuario.email, titulo.titulo, titulo.genero, titulo.ano, titulo.duracao, titulo.sinopse, titulo.trailer, titulo.imagem
+    $sql = "SELECT usuario.email, titulo.titulo, titulo.genero, titulo.ano, titulo.duracao, titulo.sinopse, titulo.trailer, titulo.imagem, titulo.idTitulo
     FROM titulo JOIN favoritos
     ON favoritos.idTitulo = titulo.idTitulo
     JOIN usuario

@@ -63,15 +63,25 @@
                 </div>
 
                 <div class="novosTitulos">
-                    <h2 class="subtitle">Adicionar título</h2>
-                    <label>Preencha as informações abaixo:</label> <br>
+                    <h2 class="subtitle">Adicionar Filme/Série</h2>
+                    <label>Preencha as informações abaixo: </label> <br> <br>
+                    <label>Título:</label> <br>
                     <input type="text" class="inputAddTitulo" id="titulo" placeholder="Titulo"> <br>
+                    <label>Gênero:</label> <br>
                     <input type="text" class="inputAddTitulo" id="genero" placeholder="Gênero"> <br>
+                    <label>Ano:</label> <br>
                     <input type="text" class="inputAddTitulo" id="ano" placeholder="Ano"> <br>
-                    <input type="text" class="inputAddTitulo" id="duracao" placeholder="Duracao"> <br>
+                    <label>Duração:</label> <br>
+                    <input type="text" class="inputAddTitulo" id="duracao" placeholder="Duracao   (Ex:. 2h30)"> <br>
+                    <label>Sinopse:</label> <br>
                     <input type="text" class="inputAddTitulo" id="sinopse" placeholder="Sinopse"> <br>
+                    <!-- <textarea class="inputAddTitulo" id="sinopse"> </textarea> <br>-->
+                    <label>Link trailer:</label> <br>
                     <input type="text" class="inputAddTitulo" id="trailer" placeholder="Trailer"> <br>
-                    <input type="text" class="inputAddTitulo" id="imagem" placeholder="Imagem"> <br>
+                    <div class="img-upload">
+                        <label>Selecione a capa do filme: </label> <br>
+                        <input type="file" class="inputAddTitulo" id="imagem" placeholder="Imagem">
+                    </div>
                     <button class="btCadastrarFilme">Cadastrar</button>
                 </div>
 

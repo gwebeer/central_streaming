@@ -29,8 +29,7 @@
 
         $message = "Boa Noite, <br> <br>
         Recebemos seu pedido para redefinir a senha. <br> <br>
-        Para redefinir sua senha, clique no botão abaixo: <br> <br>
-        localhost/centralStreaming/html/forgotPassword.html <br> <br>
+        Para redefinir sua senha, <a href='localhost/central_streaming/pages/redefineSenha.php?id=".$email."'>clique aqui</a> <br> <br>
         Caso não tenha solicitado, favor ignorar a mensagem!. <br> <br>
         <br> <br>
         Att, <br> <br>

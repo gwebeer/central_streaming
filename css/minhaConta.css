@@ -42,6 +42,28 @@
     margin-top: 30px;
 }
 .campoForm{
-    padding: 4px;
+    padding: 7px;
     width: 300px;
+    border-radius: 20px;
+    border: none;
+}
+.btAlteraCartao {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    background-color: teal;
+    color: rgb(206, 203, 203);
+    border: 1px solid teal;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 25px;
+    font-size: 13px;
+}
+.btAlteraCartao:hover {
+    cursor: pointer;
+    color: teal;
+    border: 1px solid teal;
+    background-color: rgba(206, 203, 203, 0);
+    transition: background-color .3s;
 }

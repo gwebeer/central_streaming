@@ -2,7 +2,7 @@
 
 	define("ENDERECO", "localhost");
 	define("PORTA", "3306");
-	define("BANCO", "central");
+	define("BANCO", "central_streaming");
 	define("USUARIO_MYSQL", "root");
 	define("SENHA_MYSQL", "");
 

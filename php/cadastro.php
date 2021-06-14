@@ -14,7 +14,7 @@
     $cvc = $_POST["cvc"];
 
     // Seta query de cadastro
-    $resultado = mysqli_query($conexao, "INSERT INTO usuario (nome, senha, email, plano, nomecartao, numerocartao, datavencimento, cvc) VALUES ('$nome', '$senha', '$email', '$plano', '$nomeCartao', '$numeroCartao', '$dataVencimento', '$cvc')");
+    $resultado = mysqli_query($conexao, "INSERT INTO usuario (nome, senha, email, plano, nomecartao, numerocartao, dataVencimento, cvc) VALUES ('$nome', '$senha', '$email', '$plano', '$nomeCartao', '$numeroCartao', '$dataVencimento', '$cvc')");
 
     // Seta retorno padrao (negativo)
     $retorno["status"] = "n";

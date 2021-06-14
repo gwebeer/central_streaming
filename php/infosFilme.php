@@ -3,10 +3,10 @@
     require "../php/config.php";
 
     // Puxa informacoes JavaScript
-    $titulo = $_POST['titulo'];
+    $id = $_POST['titulo'];
 
     // Seta a query de puxar informações do titulo
-    $sql = "SELECT * FROM `titulo` WHERE titulo = '$titulo'";
+    $sql = "SELECT * FROM `titulo` WHERE idTitulo = '$id'";
 
     // Puxa informações banco
     $result = $conexao->query($sql);

@@ -119,8 +119,7 @@ function fComunicaServerLogin(){
             senhaLogin: fHashSenhas($("#tSenhaLogin").val()),
         }, success: function(retorno){
             if(retorno.status == "s"){
-                alert("Cadastrado");
-                window.open('../pages/catalogo.php');
+                window.location.href = "../pages/catalogo.php";
             } else {
                 alert("Usuario ou senha incorretos!");
             }
