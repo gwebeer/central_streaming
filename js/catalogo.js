@@ -1,24 +1,29 @@
 $(document).ready(function () {
-    recuperaFilmes();
+    recuperaFilmes("sem_filtro", "");
+    buscar();
+    resetar();
 });
 
-var registerError = false;
-const entry_point = "http://localhost/central_streaming/";
-
-function recuperaFilmes() {
-    let end_point = "./php/exibeFilmes.php";
-    let url = `${entry_point}${end_point}`;
+function recuperaFilmes(filtro, valor){
     $.ajax({
-        url: url,
-        method: 'GET',
-        dataType: 'json'
-    }).done(function (result) {
-        listaFilmes(result);
-        console.log(result)
-     });   
+        type: "POST",
+        dataType: "json",
+        url: "../php/exibeFilmes.php",
+        data: {
+            filtro: filtro,
+            valorFiltro: valor,
+        }, success: function(result){
+            listaFilmes(result);
+        }
+    })
 }
 
 function listaFilmes(result){
+    if(result == "Nenhum filme encontrado") {
+        var msg_erro = '<h3 class="msg-erro"> Ops... Não encontramos resultados de busca! </h3>';
+        $(".cards").append(msg_erro);
+        return;
+    }
     for(var i = 0; i < result.length; i++){
         
         var conteudo = "";
@@ -32,14 +37,30 @@ function listaFilmes(result){
         $(".cards").append(conteudo);
     }
 
-    alert(result.length)
-
-    $("#" + result[result.length - (result.length-2)][2]).click(function(){
-        alert("teste");
+    $(".btn-filme").unbind("click");
+    $(".btn-filme").click(function(){
+        var id = $(this).attr("id");
+        window.location.href = "../pages/paginaFilme.php?id=" + id;
     })
 
 }
 
-function click(){
-    alert("teste");
+function buscar(){
+    $("#bt-buscar").unbind("click");
+    $("#bt-buscar").click(function(){
+        var valor = $("#tInfoTitulo").val();
+        var filtro = $(".filtros-opt option:selected").attr('id');
+
+        $(".cards").html("");
+        recuperaFilmes(filtro, valor);
+    })
+}
+function resetar(){
+    $("#bt-resetar").unbind("click");
+    $("#bt-resetar").click(function(){
+        $(".cards").html("");
+        recuperaFilmes("sem_filtro", "");
+        $("#tInfoTitulo").val("");
+        document.getElementsByClassName("filtros-opt")[0].options.selectedIndex = 0;
+    })
 }

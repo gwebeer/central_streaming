@@ -10,7 +10,8 @@
     $duracao =  $_POST["duracao"] ;
     $sinopse = $_POST["sinopse"] ;
     $trailer = $_POST["trailer"];
-    $imagem = $_POST["imagem"] ;
+    $imagem = $_POST["imagem"];
+
 
     // Seta query de cadastro
     $resultado = mysqli_query($conexao, "INSERT INTO titulo (titulo, genero, ano, duracao, sinopse, trailer, imagem) 

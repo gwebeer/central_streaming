@@ -29,22 +29,18 @@
 
                     <h2 class="title title-second">Esqueci minha senha</h2>
         
-                    <p class="description description-second">Confirme seu e-mail e em seguida</p>
-                    <p class="description description-second">digite sua nova senha</p>
-                    <div class="form">
+                    <p class="description description-second">Digite sua nova senha</p>
+                    <p class="description description-second">e volte a assistir!</p>
+                    <br>
+                    <div class="form">        
                         <label class="label-input" for="">
-                            <i class="far fa-envelope icon-modify"></i>
-                            <input type="text" name="nome" placeholder="E-mail" id="tMudaEmail">
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Nova Senha" id="tMudaSenha">
                         </label>
         
                         <label class="label-input" for="">
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha" id="tMudaSenha">
-                        </label>
-        
-                        <label class="label-input" for="">
-                            <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Confirma Senha" id="tMudaSenha2">
+                            <input type="password" placeholder="Confirmar Nova Senha" id="tMudaSenha2">
                         </label>
         
                         <button class="btn btn-second" id="btAlterar"> Alterar </button>     

@@ -28,9 +28,15 @@ function listaFilmes(result){
         conteudo += '<div class="card-filme">';
         conteudo +=     '<img src="../images/'+result[i][7]+'" class="img-filme">';
         conteudo +=     '<h3 class="title-filme">' + result[i][1] + '</h3>';
-        conteudo +=     '<button class="btn-filme" id="'+result[i][1]+'" onclick="fAbrePaginaFilme('+ i +')">Ver Detalhes</button>';
+        conteudo +=     '<button class="btn-filme" id="'+result[i][8]+'">Ver Detalhes</button>';
         conteudo += '</div>';
 
         $(".cards").append(conteudo);
     }    
+
+    $(".btn-filme").unbind("click");
+    $(".btn-filme").click(function(){
+        var id = $(this).attr("id");
+        window.location.href = "../pages/paginaFilme.php?id=" + id;
+    })
 }

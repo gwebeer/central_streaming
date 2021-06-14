@@ -75,3 +75,7 @@ label {
     background-color: rgba(206, 203, 203, 0);
     transition: background-color .3s;
 }
+#imagem {
+    color: rgb(206, 203, 203);
+    width: 400px;
+}
